@@ -16,19 +16,19 @@ vxlan_features:
   - feature: interface-vlan
     state: enabled
 
-# Leaf facing interfaces
+# Spine facing interfaces
 
 spine_facing_ifaces:
   - name: Ethernet1/1
   - name: Ethernet1/2
 
-# Loopback interface to be used for various tasks
+# Loopback interfaces to be used for various tasks
 
 loopback_ifaces:
   - name: Loopback0
   - name: Loopback1
 
-# Variables to be used in PIM configuration
+# Variables to be used for PIM configuration
 
 leaf1_loopback0: 1.1.0.91
 leaf2_loopback0: 1.1.0.92
