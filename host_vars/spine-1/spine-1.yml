@@ -1,0 +1,14 @@
+---
+# Host specific variables to be used by Spine-1
+
+# Loopback interface ip addresses 
+
+loopback_ip:
+    - name: Loopback0
+      ipv4: 1.1.0.191/32
+    - name: Loopback1
+      ipv4: 1.1.1.190/32
+
+# OSPF/BGP Router-ID
+
+router_id: 1.1.0.191

@@ -1,0 +1,16 @@
+---
+# Host specific variables to be used by Spine-2
+
+# Loopback interface ip addresses 
+
+loopback_ip:
+    - name: Loopback0
+      description: Underlay Unicast Routing Domain Router-ID
+      ipv4: 1.1.0.192/32
+    - name: Loopback1
+      description: Underlay Multicast PIM Anycast RP Address
+      ipv4: 1.1.1.190/32
+
+# OSPF/BGP Router-ID
+
+router_id: 1.1.0.192

@@ -1,0 +1,17 @@
+---
+# Host specific variables to be used by Leaf-2
+
+# Loopback interface ip addresses
+
+loopback_ip:
+    - name: Loopback0
+     # description: Underlay_Unicast_Routing_Domain_Router-ID
+      ipv4: 1.1.0.92/32
+    - name: Loopback1
+      #description: VTEP_ID
+      ipv4: 1.1.90.92/32
+
+# OSPF/BGP Router-ID
+
+router_id: 1.1.0.92
+

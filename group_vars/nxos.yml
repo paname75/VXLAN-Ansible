@@ -1,0 +1,23 @@
+---
+
+# Defining NXAPI connection parameters for NXOS devices
+ansible_connection: httpapi
+ansible_network_os: nxos
+ansible_user: admin
+ansible_password: 1234QWer
+
+#These are the VLANs that are common to all leaves.
+vlans_common:
+  - vlan_id: 550
+    admin_state: up
+    name: BLACK
+  - vlan_id: 551
+    admin_state: up
+    name: ORANGE
+  - vlan_id: 552
+    admin_state: up
+    name: PINK
+
+#"vlans_unique" defined under "host_vars" per switch.
+vlans: "{{ vlans_common }} + {{ vlans_unique }} "
+
