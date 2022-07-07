@@ -1,8 +1,8 @@
 ---
 
 # Defining NXAPI connection parameters for NXOS devices
-ansible_connection: httpapi
-ansible_network_os: nxos
+ansible_connection: ansible.netcommon.network_cli
+ansible_network_os: cisco.nxos.nxos
 ansible_user: cisco
 ansible_password: cisco
 
