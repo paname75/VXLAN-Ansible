@@ -3,8 +3,8 @@
 # Defining NXAPI connection parameters for NXOS devices
 ansible_connection: httpapi
 ansible_network_os: nxos
-ansible_user: admin
-ansible_password: 1234QWer
+ansible_user: cisco
+ansible_password: cisco
 
 #These are the VLANs that are common to all leaves.
 vlans_common:
